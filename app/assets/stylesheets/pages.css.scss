@@ -8,8 +8,16 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  padding-top: 40px;
 }
 
+
+
+.carousel-caption h1 {
+    color: white;
+    text-shadow: 3px 2px 2px #000;
+    font-size: 46px;
+  }
 
 
 /* CUSTOMIZE THE NAVBAR
@@ -139,6 +147,10 @@ body {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;
+    color: white;
+  }
+  .carousel-caption h1 {
+    color: white;
   }
 
 }
