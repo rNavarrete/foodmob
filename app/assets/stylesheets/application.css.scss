@@ -13,9 +13,12 @@
  *= require_tree .
  *= require_self
  */
-
-
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,900,500);
 @import "bootstrap";
+
+
+
 
 /*!
  * Bootswatch v3.1.1+1
@@ -26,10 +29,12 @@
 */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   margin: 0;
 }

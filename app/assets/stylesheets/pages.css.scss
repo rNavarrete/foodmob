@@ -8,7 +8,6 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
-  padding-top: 40px;
 }
 
 
@@ -38,7 +37,8 @@ body {
 }
 
 .carousel-inner{
-	height: 550px;
+	height: 570px;
+
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -133,13 +133,17 @@ body {
     padding-right: 0;
   }
 
+  .carousel-caption h1{
+	  font-size: 39px;
+  }
+
   /* Navbar positioning foo */
   .navbar-wrapper {
     margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
   }
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
-    border-radius: 4px;
+    height: 55px;
   }
 
   /* Bump up size of carousel content */
@@ -154,4 +158,63 @@ body {
   }
 
 }
+@media (min-width: 768px){
+  .carousel-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 300px;
+  }
+}  
+
+@media (max-width: 767px) {
+.navbar-wrapper .navbar {
+    height: 55px;
+  }
+  .carousel-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 300px;
+
+  }
+}
+
+@media (max-width: 1051px) {
+  .carousel {
+    width: 100%;
+    height: 400px;
+  }
+  .carousel-caption{
+	  font-size: 10px;
+	  height: 700px;
+	  padding-bottom: 30px;
+  }
+  .marketing{
+  	margin-top: 275px;
+  }  
+  .carousel-indicators{
+  	display: none;
+  }
+}
+
+@media (max-width: 401px) {
+	.carousel-inner{
+	  height: 400px;
+  }
+  .navbar-wrapper .navbar {
+    height: 51px;
+  }
+  .carousel-caption h1{
+	  font-size: 30px;
+  }
+  .marketing{
+  	margin-top: 100px;
+  }  
+}
+
+@media (max-width: 852px) {
+  .carousel-caption h1{
+	  font-size: 30px;
+  }
+}
+
 
