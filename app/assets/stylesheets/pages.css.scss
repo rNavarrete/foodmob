@@ -16,6 +16,11 @@ body {
 -------------------------------------------------- */
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navcontainer {
+	width: 100%;
+}
+
 .navbar-wrapper {
   position: absolute;
   top: 0;
@@ -24,7 +29,9 @@ body {
   z-index: 10;
 }
 
-
+.carousel-inner{
+	height: 550px;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -120,7 +127,6 @@ body {
 
   /* Navbar positioning foo */
   .navbar-wrapper {
-    margin-top: 20px;
     margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
   }
   /* The navbar becomes detached from the top, so we round the corners */
