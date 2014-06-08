@@ -1,0 +1,26 @@
+<div class="navbar-wrapper">
+  <div class="navcontainer">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="border-bottom:none">
+      
+        <div class="navbar-header">
+	    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </a>
+        <a class="navbar-brand" href="#" style="font-family: 'Montserrat', sans-serif;color: white;font-size: xx-large;font-weight: 700;padding-top: 17px;">FoodMob</a>
+        </div>
+        <div class="navbar-collapse collapse pull-right">
+          <ul class="nav navbar-nav" style="font-family: 'Montserrat', sans-serif;font-weight: 400; color: white;padding-top: 7px;">
+            <% if user_signed_in? %>
+            <%= button_to "Sign Out", destroy_user_session_path, :method => "delete", class: "btn btn-info", style: "margin-right: 11px;"%>
+            <% else %>  
+              <li><form action="/users/sign_in/"><input type="submit" value="Log In" class="btn btn-info" style="margin-right: 11px;"></form></li>
+            <% end %>  
+            <li class="dropdown"></li>
+          </ul>
+        </div>
+
+    </div>
+  </div><!-- /container -->
+</div><!-- /navbar wrapper -->

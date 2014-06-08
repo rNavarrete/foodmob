@@ -1,0 +1,20 @@
+<style type="text/css">
+  body{
+  	padding-top: 60px;
+  }
+</style>
+<div class="container">
+
+<h3> Sign In </h3>
+	<%= simple_form_for(resource, :as => resource_name, html: {class: 'form-horizontal' }, :url => session_path(resource_name)) do |f| %>
+
+	    <%= f.input :email, :required => false, :autofocus => true  %>
+	    <%= f.input :password, :required => false %>
+       <div class="buttonsignin">
+	    <%= f.button :submit, "Sign in", html: { class: "btn btn-primary"} %>
+	   </div> 
+	<% end %>
+
+	<%= render "devise/shared/links" %>
+
+</div>

@@ -57,7 +57,11 @@ line-height: 1;
         </div>
         <div class="navbar-collapse collapse pull-right">
           <ul class="nav navbar-nav" style="font-family: 'Montserrat', sans-serif;font-weight: 400; color: white;padding-top: 7px;">
-            <li><button class="btn btn-info btn-sm" style="margin-top: 7px; margin-right:20px;" type="submit">Login</button></li>
+            <% if user_signed_in? %>
+            <%= button_to "Sign Out", destroy_user_session_path, :method => "delete", class: "btn btn-info", style: "margin-right: 11px;"%>
+            <% else %>  
+              <li><form action="/users/sign_in/"><input type="submit" value="Log In" class="btn btn-info" style="margin-right: 11px;"></form></li>
+            <% end %>  
             <li class="dropdown"></li>
           </ul>
         </div>
