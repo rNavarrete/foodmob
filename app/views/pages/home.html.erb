@@ -1,13 +1,5 @@
 <style>
 .navbar-inverse{
-color: white;
-background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 99%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(99%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 99%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 99%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 99%,rgba(0,0,0,0) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(215, 40, 40, 0.9) 99%,rgba(0,0,0,0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 
 
 }
@@ -43,32 +35,6 @@ line-height: 1;
 </style>
 
 
-<div class="navbar-wrapper">
-  <div class="navcontainer">
-    <div class="navbar navbar-inverse navbar-fixed-top" style="border-bottom:none">
-      
-        <div class="navbar-header">
-	    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </a>
-        <a class="navbar-brand" href="#" style="font-family: 'Montserrat', sans-serif;color: white;font-size: xx-large;font-weight: 700;padding-top: 17px;">FoodMob</a>
-        </div>
-        <div class="navbar-collapse collapse pull-right">
-          <ul class="nav navbar-nav" style="font-family: 'Montserrat', sans-serif;font-weight: 400; color: white;padding-top: 7px;">
-            <% if user_signed_in? %>
-            <%= button_to "Sign Out", destroy_user_session_path, :method => "delete", class: "btn btn-info", style: "margin-right: 11px;"%>
-            <% else %>  
-              <li><form action="/users/sign_in/"><input type="submit" value="Log In" class="btn btn-info" style="margin-right: 11px;"></form></li>
-            <% end %>  
-            <li class="dropdown"></li>
-          </ul>
-        </div>
-
-    </div>
-  </div><!-- /container -->
-</div><!-- /navbar wrapper -->
 
 
 <!-- Carousel
@@ -128,67 +94,71 @@ line-height: 1;
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
 
-<div class="container marketing" style="background-color: #ffffff; width: 100%; position: relative; padding-top: 11px;">
-    <h1 style="margin-left: 565px;font-family: 'Montserrat', sans-serif; font-weight: 700; color: crimson">What our clients are saying:</h1>
+<div class="container">
 
-  <!-- Three columns of text below the carousel -->
-  <div class="row">
-    <div class="col-md-4 text-center">
-      <img class="img-circle" src="/images/carla.jpg">
-      <p>"Extremely pleased with Claudia. I would recommend her to my friends and family! I am looking forward to a continued great working relationship with claudia."</p>
-      <p><a class="btn btn-default" href="#">View details »</a></p>
+  <div class="container marketing" style="background-color: #ffffff; width: 100%; position: relative; padding-top: 11px;">
+      <h1 style="margin-left: 38%;font-family: 'Montserrat', sans-serif; font-weight: 700; color: crimson; margin-top:182px;">What our clients are saying:</h1>
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img class="img-circle" src="/images/carla.jpg">
+        <p>"Extremely pleased with Claudia. I would recommend her to my friends and family! I am looking forward to a continued great working relationship with claudia."</p>
+        <p><a class="btn btn-default" href="#">View details »</a></p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img class="img-circle" src="images/smiles.jpg/">
+        <p>"They were amazing! Our apartment was a mess and they stayed even longer than planned, making sure everything was spotless! We were so impressed with their work ethic and how nice they were too. I highly recommend them!"</p>
+        <p><a class="btn btn-default" href="#">View details »</a></p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img class="img-circle" src="/images/guy1.jpg">
+        <p>"Hi. I want to thank you guys so much. My friend let me know about you guys and I am so happy he did. At first I was a bit hesitant to hire a crew of people to come to my house, but the maids were so nice, Thanks guys!!!"
+
+  </p>
+        <p><a class="btn btn-default" href="#">View details »</a></p>
+      </div>
+    </div><!-- /.row -->
+
+
+
+
+
+
+    <!-- Three columns of text below the carousel -->
+  </div>
+
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="featurette">
+      <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
+      <h2 class="featurette-heading">Responsive Design. <span class="text-muted">It'll blow your mind.</span></h2>
+      <p class="lead">In simple terms, a responsive web design figures out what resolution of device it's being served on. Flexible grids then size correctly to fit the screen.</p>
     </div>
-    <div class="col-md-4 text-center">
-      <img class="img-circle" src="images/smiles.jpg/">
-      <p>"They were amazing! Our apartment was a mess and they stayed even longer than planned, making sure everything was spotless! We were so impressed with their work ethic and how nice they were too. I highly recommend them!"</p>
-      <p><a class="btn btn-default" href="#">View details »</a></p>
+
+    <hr class="featurette-divider">
+
+    <div class="featurette">
+      <img class="featurette-image img-circle pull-left" src="http://placehold.it/512">
+      <h2 class="featurette-heading">Smaller Footprint. <span class="text-muted">Lightweight.</span></h2>
+      <p class="lead">The new Bootstrap 3 promises to be a smaller build. The separate Bootstrap base and responsive.css files have now been merged into one. There is no more fixed grid, only fluid.</p>
     </div>
-    <div class="col-md-4 text-center">
-      <img class="img-circle" src="/images/guy1.jpg">
-      <p>"Hi. I want to thank you guys so much. My friend let me know about you guys and I am so happy he did. At first I was a bit hesitant to hire a crew of people to come to my house, but the maids were so nice, Thanks guys!!!"
 
-</p>
-      <p><a class="btn btn-default" href="#">View details »</a></p>
+    <hr class="featurette-divider">
+
+    <div class="featurette">
+      <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
+      <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Flatness.</span></h2>
+      <p class="lead">A big design trend for 2013 is "flat" design. Gone are the days of excessive gradients and shadows. Designers are producing cleaner flat designs, and Bootstrap 3 takes advantage of this minimalist trend.</p>
     </div>
-  </div><!-- /.row -->
 
+    <hr class="featurette-divider">
 
-
-
-
-
-  <!-- Three columns of text below the carousel -->
 </div>
-
-
-
-  <!-- START THE FEATURETTES -->
-
-  <hr class="featurette-divider">
-
-  <div class="featurette">
-    <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
-    <h2 class="featurette-heading">Responsive Design. <span class="text-muted">It'll blow your mind.</span></h2>
-    <p class="lead">In simple terms, a responsive web design figures out what resolution of device it's being served on. Flexible grids then size correctly to fit the screen.</p>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <div class="featurette">
-    <img class="featurette-image img-circle pull-left" src="http://placehold.it/512">
-    <h2 class="featurette-heading">Smaller Footprint. <span class="text-muted">Lightweight.</span></h2>
-    <p class="lead">The new Bootstrap 3 promises to be a smaller build. The separate Bootstrap base and responsive.css files have now been merged into one. There is no more fixed grid, only fluid.</p>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <div class="featurette">
-    <img class="featurette-image img-circle pull-right" src="http://placehold.it/512">
-    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Flatness.</span></h2>
-    <p class="lead">A big design trend for 2013 is "flat" design. Gone are the days of excessive gradients and shadows. Designers are producing cleaner flat designs, and Bootstrap 3 takes advantage of this minimalist trend.</p>
-  </div>
-
-  <hr class="featurette-divider">
 
   <!-- /END THE FEATURETTES -->
 
