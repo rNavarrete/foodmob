@@ -191,36 +191,13 @@ body {
 
   }
   .marketing{
-  	margin-top: 275px;
+  	margin-top: 20px;
   }  
   .carousel-indicators{
   	display: none;
   }
 }
 
-@media (max-width: 401px) {
-	.carousel-inner{
-	  height: 400px;
-  }
-  .navbar-wrapper .navbar {
-    height: 51px;
-  }
-  .carousel-caption h1{
-	  font-size: 30px;
-  }
-  .marketing{
-  	margin-top: 100px;
-  }  
-  .carousel-caption{
-	  font-size: 10px;
-	  height: 700px;
-	  padding-bottom: 70px;
-	  margin-bottom: 66px;
-  }
-  #ordersize{
-	  font-size: 20px;
-  }  
-}
 
 @media (max-width: 852px) {
   .carousel-caption h1{
@@ -229,6 +206,33 @@ body {
   #ordersize{
 	  font-size: 20px;
   }  
+}
+
+@media (max-width: 480px) {
+  .carousel-inner{
+    height: 400px;
+  }
+  .navbar-wrapper .navbar {
+    height: 51px;
+  }
+  .carousel-caption h1{
+    font-size: 30px;
+  }
+  .marketing{
+    margin-top: 0px;
+  }  
+  .carousel-caption{
+    font-size: 10px;
+    height: 700px;
+    padding-bottom: 70px;
+    margin-bottom: 66px;
+  }
+  #ordersize{
+    font-size: 20px;
+  } 
+  .marketing h1 {
+    font-size: 27px;
+  } 
 }
 
 
