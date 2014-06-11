@@ -125,6 +125,13 @@ body {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
+@media (min-width: 768px) and (max-width: 1000px) {
+   .collapse {
+       display: none !important;
+   }
+}
+
+
 @media (min-width: 768px) {
 
   /* Remve the edge padding needed for mobile */
@@ -212,6 +219,9 @@ body {
 }
 
 @media (max-width: 480px) {
+  .collapse {
+       display: none !important;
+   }
   .carousel-inner{
     height: 400px;
   }
@@ -236,6 +246,12 @@ body {
   .marketing h1 {
     font-size: 27px;
   } 
+}
+
+@media (max-width: 692px) {
+  .collapse {
+       display: none !important;
+   }
 }
 
 
