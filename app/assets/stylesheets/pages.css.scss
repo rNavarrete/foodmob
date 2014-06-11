@@ -164,6 +164,9 @@ body {
     right: 20%;
     padding-bottom: 300px;
   }
+  .container{
+    padding-top: 156px
+  }
 }  
 
 @media (max-width: 767px) {
@@ -216,7 +219,7 @@ body {
     height: 51px;
   }
   .carousel-caption h1{
-    font-size: 30px;
+    font-size: 26px;
   }
   .marketing{
     margin-top: 0px;
@@ -225,7 +228,7 @@ body {
     font-size: 10px;
     height: 700px;
     padding-bottom: 70px;
-    margin-bottom: 66px;
+    margin-bottom: 150px;
   }
   #ordersize{
     font-size: 20px;
