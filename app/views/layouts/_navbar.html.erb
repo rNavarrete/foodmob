@@ -1,12 +1,14 @@
 
 <div class="navbar-wrapper">
   <div class="navcontainer">
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="border-bottom:none; background-color:#ffffff; border-top: 4px solid crimson;">
+    <div class="navbar navbar-default navbar-fixed-top effect1" role="navigation" style="border-bottom:none; background-color:#ffffff; border-top: 4px solid crimson; -webkit-box-shadow: 0px 5px 9px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 5px 9px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 5px 9px 0px rgba(50, 50, 50, 0.75);">
       <ul class="nav navbar-nav pull-right" style="font-family: 'Montserrat', sans-serif;font-weight: 400; color: white;padding-top: 3.3px;">
             <% if user_signed_in? %>
             <li><%= button_to "Sign Out", destroy_user_session_path, :method => "delete", class: "btn btn-primary", style: "margin-right: 11px;"%></li>
             <% else %>  
-              <li class="float: right"><form action="/users/sign_in/"><input type="submit" value="Log In" class="btn btn-success" style="margin-right: 11px; float: right"></form></li>
+              <li class="float: right"><form action="/users/sign_in/"><input type="submit" value="Log In" class="btn btn-info" style="margin-right: 11px; float: right"></form></li>
             <% end %>  
           </ul>
         <div class="navbar-header">
